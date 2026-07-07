@@ -1,0 +1,228 @@
+/*
+ * Teacher Training Program - Global Design System
+ * Enforces brand styling across all third-party plugins.
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700&display=swap');
+
+:root {
+    /* Primary Colors */
+    --ttp-indigo: #4F46E5;
+    --ttp-indigo-hover: #4338CA;
+    --ttp-purple: #7C3AED;
+    --ttp-cyan: #06B6D4;
+    --ttp-pink: #EC4899;
+
+    /* Semantic */
+    --ttp-success: #10B981;
+    --ttp-warning: #F59E0B;
+    --ttp-error: #EF4444;
+
+    /* Surfaces & Text (Light Mode Base) */
+    --ttp-bg: #F8FAFC;
+    --ttp-surface: #FFFFFF;
+    --ttp-border: #E2E8F0;
+    --ttp-text-head: #0F172A;
+    --ttp-text-body: #475569;
+    --ttp-text-muted: #94A3B8;
+
+    /* Fonts */
+    --ttp-font-head: 'Outfit', sans-serif;
+    --ttp-font-body: 'Inter', sans-serif;
+
+    /* Radii */
+    --ttp-radius-sm: 4px;
+    --ttp-radius-md: 8px;
+    --ttp-radius-lg: 16px;
+    
+    /* Shadows */
+    --ttp-shadow-soft: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    --ttp-shadow-hover: 0 10px 15px -3px rgba(79, 70, 229, 0.15);
+}
+
+/* ==========================================================================
+   GLOBAL RESET & TYPOGRAPHY
+   ========================================================================== */
+body {
+    background-color: var(--ttp-bg) !important;
+    color: var(--ttp-text-body) !important;
+    font-family: var(--ttp-font-body) !important;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6, 
+.entry-title, .tutor-course-title, .um-header {
+    font-family: var(--ttp-font-head) !important;
+    color: var(--ttp-text-head) !important;
+    letter-spacing: -0.02em;
+}
+
+/* ==========================================================================
+   GLOBAL BUTTONS (Tutor, WooCommerce, BuddyPress, Standard)
+   ========================================================================== */
+.button, 
+.btn, 
+button, 
+input[type="submit"], 
+.tutor-btn, 
+.woocommerce-button,
+.um-button {
+    background: linear-gradient(135deg, var(--ttp-indigo), var(--ttp-purple)) !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: var(--ttp-radius-md) !important;
+    padding: 12px 24px !important;
+    font-family: var(--ttp-font-body) !important;
+    font-weight: 500 !important;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    cursor: pointer;
+    text-transform: none !important;
+    box-shadow: 0 2px 4px rgba(79, 70, 229, 0.2) !important;
+}
+
+.button:hover, 
+.btn:hover, 
+button:hover, 
+input[type="submit"]:hover, 
+.tutor-btn:hover,
+.woocommerce-button:hover,
+.um-button:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: var(--ttp-shadow-hover) !important;
+    background: linear-gradient(135deg, var(--ttp-indigo-hover), var(--ttp-purple)) !important;
+}
+
+/* Ghost / Secondary Overrides (if they have specific classes) */
+.tutor-btn-ghost, .button-secondary {
+    background: transparent !important;
+    border: 1px solid var(--ttp-indigo) !important;
+    color: var(--ttp-indigo) !important;
+    box-shadow: none !important;
+}
+.tutor-btn-ghost:hover, .button-secondary:hover {
+    background: rgba(79, 70, 229, 0.05) !important;
+    box-shadow: none !important;
+}
+
+/* ==========================================================================
+   CARDS & CONTAINERS (Tutor LMS Course Cards, Dashboards)
+   ========================================================================== */
+.tutor-card, .tutor-course-card, .um-profile-body, .bp-wrap, .ttp-card {
+    background: var(--ttp-surface) !important;
+    border: 1px solid var(--ttp-border) !important;
+    border-radius: var(--ttp-radius-lg) !important;
+    box-shadow: var(--ttp-shadow-soft) !important;
+    transition: all 0.3s ease;
+}
+
+.tutor-course-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--ttp-shadow-hover) !important;
+}
+
+/* Glassmorphism Example applied to Tutor Sticky Sidebar */
+.tutor-course-sidebar {
+    background: rgba(255, 255, 255, 0.7) !important;
+    backdrop-filter: blur(12px) !important;
+    border-radius: var(--ttp-radius-lg) !important;
+    border: 1px solid var(--ttp-border) !important;
+}
+
+/* ==========================================================================
+   FORMS & INPUTS (Ultimate Member, Comments, Search)
+   ========================================================================== */
+input[type="text"], 
+input[type="email"], 
+input[type="password"], 
+textarea, 
+select,
+.um-form input[type="text"] {
+    background: #F8FAFC !important;
+    border: 1px solid transparent !important;
+    border-radius: var(--ttp-radius-md) !important;
+    padding: 12px 16px !important;
+    font-family: var(--ttp-font-body) !important;
+    color: var(--ttp-text-head) !important;
+    transition: all 0.2s ease !important;
+    width: 100%;
+}
+
+input:hover, textarea:hover, select:hover {
+    border-color: var(--ttp-border) !important;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none !important;
+    background: #FFFFFF !important;
+    box-shadow: 0 0 0 2px var(--ttp-cyan) !important;
+}
+
+.um-field-label label {
+    font-family: var(--ttp-font-body) !important;
+    font-size: 0.75rem !important;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--ttp-text-muted) !important;
+    font-weight: 600 !important;
+}
+
+/* ==========================================================================
+   HEADER NAVIGATION (Simulated Glassmorphism since we don't have Kadence)
+   ========================================================================== */
+.site-header, .wp-block-template-part header {
+    background: rgba(255, 255, 255, 0.8) !important;
+    backdrop-filter: blur(8px) !important;
+    border-bottom: 1px solid var(--ttp-border) !important;
+    position: sticky !important;
+    top: 0;
+    z-index: 999;
+}
+
+.site-title a {
+    font-family: var(--ttp-font-head) !important;
+    font-weight: 700 !important;
+    color: var(--ttp-indigo) !important;
+    letter-spacing: -0.02em;
+}
+
+/* ==========================================================================
+   TABLES (Dashboards, Gradebooks)
+   ========================================================================== */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th {
+    background: var(--ttp-bg) !important;
+    font-family: var(--ttp-font-body) !important;
+    font-weight: 600 !important;
+    font-size: 0.875rem;
+    color: var(--ttp-text-body) !important;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 16px 24px !important;
+    border-bottom: 1px solid var(--ttp-border) !important;
+}
+td {
+    padding: 16px 24px !important;
+    border-bottom: 1px solid var(--ttp-border) !important;
+    color: var(--ttp-text-head) !important;
+    font-family: var(--ttp-font-body) !important;
+}
+tr:hover td {
+    background: rgba(0,0,0,0.01) !important;
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+.site-footer, .wp-block-template-part footer {
+    background: #0F172A !important; /* Slate 900 */
+    color: #94A3B8 !important; /* Slate 400 */
+}
+.site-footer a, .wp-block-template-part footer a {
+    color: #CBD5E1 !important; /* Slate 300 */
+}
+.site-footer a:hover, .wp-block-template-part footer a:hover {
+    color: var(--ttp-cyan) !important;
+}

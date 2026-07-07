@@ -55,3 +55,8 @@ function ttp_register_block_categories( $categories, $post ) {
     );
 }
 add_filter( 'block_categories_all', 'ttp_register_block_categories', 10, 2 );
+
+/**
+ * Load Dashboard Shortcodes
+ */
+require_once plugin_dir_path( __FILE__ ) . 'includes/shortcodes-dashboard.php';

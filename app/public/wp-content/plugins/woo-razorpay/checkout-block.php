@@ -39,7 +39,7 @@ final class WC_Razorpay_Blocks extends AbstractPaymentMethodType
     {
         return [
             'title' => 'Pay by Razorpay',
-            'description' => $this->settings['description'],
+            'description' => isset($this->settings['description']) ? $this->settings['description'] : '',
         ]; 
     }
 }

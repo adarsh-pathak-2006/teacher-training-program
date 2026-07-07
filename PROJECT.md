@@ -163,6 +163,7 @@ Leveraging Ultimate Member and custom WordPress roles:
     *   [ ] Build remaining dashboard templates.
 *   **Phase 6: QA, Testing, & Optimization (Week 9)**
     *   [x] Conduct global UI audit and apply automated CSS refactoring.
+    *   [x] Configure WordPress Core settings for production LMS environment.
     *   User acceptance testing, load testing, security audits, caching configuration.
 *   **Phase 7: Deployment (Week 10)**
     *   Go-live and post-launch monitoring.
