@@ -13,3 +13,4 @@
 [07-Jul-2026 10:07:16 UTC] PHP Warning:  dir(C:/Users/adarsh/Local Sites/teacher-training-program/app/public/wp-content/upgrade/tutor.3.9.15/tutor/templates/dashboard/quiz-attempts/): The system cannot find the path specifi (code: 3) in C:\Users\adarsh\Local Sites\teacher-training-program\app\public\wp-admin\includes\class-wp-filesystem-direct.php on line 655
 [07-Jul-2026 10:07:16 UTC] PHP Warning:  dir(C:/Users/adarsh/Local Sites/teacher-training-program/app/public/wp-content/upgrade/tutor.3.9.15/tutor/templates/dashboard/quiz-attempts/): Failed to open directory: No such file or directory in C:\Users\adarsh\Local Sites\teacher-training-program\app\public\wp-admin\includes\class-wp-filesystem-direct.php on line 655
 [07-Jul-2026 10:21:00 UTC] Quiz attempt migration completed!
+[07-Jul-2026 11:11:39 UTC] There aren't users with empty `account_status`. Maybe some users were approved manually or deleted.
