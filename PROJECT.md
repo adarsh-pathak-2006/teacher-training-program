@@ -141,7 +141,10 @@ Leveraging Ultimate Member and custom WordPress roles:
 *   **Phase 4: Custom Modules Development (Week 6-7)**
     *   Develop Startup Practical Experience module, Custom Certificates, and Assignment workflows.
 *   **Phase 5: UI/UX & Frontend Integration (Week 8)**
-    *   Build out public pages and dashboard templates using Gutenberg Blocks.
+    *   [x] Build Homepage using reusable Gutenberg blocks.
+    *   [x] Build About Us page using reusable Gutenberg blocks.
+    *   [x] Build Programs archive page using reusable Gutenberg blocks.
+    *   [ ] Build remaining public pages and dashboard templates.
 *   **Phase 6: QA, Testing, & Optimization (Week 9)**
     *   User acceptance testing, load testing, security audits, caching configuration.
 *   **Phase 7: Deployment (Week 10)**
